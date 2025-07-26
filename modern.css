@@ -1,0 +1,254 @@
+/* ReactBits-inspired modern styling */
+
+/* Enhanced text effects */
+.scramble-char {
+    display: inline-block;
+    color: rgba(102, 126, 234, 0.9);
+    font-weight: bold;
+}
+
+/* Enhanced CTA button with icon */
+.cta-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding-right: 24px;
+}
+
+.btn-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.cta-button:hover .btn-icon {
+    transform: translateX(4px);
+}
+
+/* Enhanced project cards */
+.project-icon {
+    font-size: 2rem;
+    color: #667eea;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.project-link {
+    margin-top: 1.5rem;
+}
+
+.project-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    padding: 5px 0;
+}
+
+.project-btn::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    transition: width 0.3s ease;
+}
+
+.project-btn:hover::after {
+    width: 100%;
+}
+
+.project-btn:hover i {
+    transform: translateX(5px);
+}
+
+.project-btn i {
+    transition: transform 0.3s ease;
+}
+
+/* Enhanced contact icons */
+.contact-icon {
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+}
+
+.icon-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transform: scale(0.8);
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.contact-item:hover .icon-background {
+    transform: scale(1.2);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Magnetic button effect - additional styling */
+.magnetic-btn {
+    position: relative;
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+}
+
+/* Tilt effect */
+.tilt-effect {
+    transform-style: preserve-3d;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+    will-change: transform;
+}
+
+/* Particles canvas styling */
+.particles-canvas {
+    z-index: 0;
+}
+
+/* 3D effect for card content */
+.tilt-effect .project-title,
+.tilt-effect .project-icon,
+.tilt-effect p,
+.tilt-effect .project-link {
+    transform: translateZ(20px);
+}
+
+/* Mouse cursor effect for interactive elements */
+.magnetic-btn, .tilt-effect, .project-btn {
+    cursor: pointer;
+}
+
+/* Enhanced section titles with gradients */
+.section-title.scramble-text {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    position: relative;
+    display: inline-block;
+}
+
+/* Skill tags with more interactive hover */
+.skill-tag:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px) rotate(3deg);
+}
+
+/* Stats with more depth and 3D */
+.stat-item {
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.stat-item:hover .stat-number {
+    transform: translateZ(20px);
+}
+
+.stat-number {
+    transition: transform 0.3s ease;
+}
+
+/* Education items with 3D effect */
+.education-item {
+    transform-style: preserve-3d;
+}
+
+.education-item:hover .education-title {
+    transform: translateZ(10px);
+}
+
+.education-title {
+    transition: transform 0.3s ease;
+}
+
+/* Enhanced ripple effect for buttons */
+@keyframes enhancedRipple {
+    0% {
+        transform: scale(0);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+/* Skills section improvements */
+.skills {
+    position: relative;
+    overflow: hidden;
+}
+
+.skills-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        linear-gradient(90deg, rgba(102, 126, 234, 0.1) 1px, transparent 1px),
+        linear-gradient(rgba(102, 126, 234, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+    z-index: 0;
+    animation: skillsBackgroundMove 20s linear infinite;
+}
+
+@keyframes skillsBackgroundMove {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 40px 40px;
+    }
+}
+
+.skills .container {
+    position: relative;
+    z-index: 1;
+}
+
+.skill-category {
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-category::before {
+    content: '';
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    width: 120%;
+    height: 120%;
+    background: radial-gradient(circle at center, rgba(102, 126, 234, 0.2) 0%, rgba(0, 0, 0, 0) 70%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.skill-category:hover::before {
+    opacity: 1;
+}
+
+/* Enhanced focus effects for accessibility and visual appeal */
+a:focus, button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.5);
+}

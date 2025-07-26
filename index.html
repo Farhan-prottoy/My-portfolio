@@ -6,6 +6,8 @@
     <title>Farhan Arefin Khan - Electrical Engineer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="modern.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <div class="preloader">
@@ -42,7 +44,10 @@
             <h1>Farhan Arefin Khan</h1>
             <p class="subtitle">Electrical & Electronic Engineer</p>
             <p class="description">Passionate about embedded systems, machine learning, and innovative engineering solutions</p>
-            <a href="#about" class="cta-button">Explore My Work</a>
+            <a href="#about" class="cta-button magnetic-btn">
+                <span class="magnetic-child">Explore My Work</span>
+                <span class="btn-icon magnetic-child"><i class="fas fa-arrow-right"></i></span>
+            </a>
         </div>
     </section>
 
@@ -119,8 +124,9 @@
     </section>
 
     <section id="skills" class="section skills">
+        <div class="skills-background"></div>
         <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
+            <h2 class="section-title scramble-text">Technical Skills</h2>
             <div class="skills-grid">
                 <div class="skill-category fade-in">
                     <h3>Programming & Scripting</h3>
@@ -196,21 +202,34 @@
         <div class="container">
             <h2 class="section-title">Featured Projects</h2>
             <div class="projects-grid">
-                <div class="project-card fade-in">
+                <div class="project-card fade-in tilt-effect">
+                    <div class="project-icon"><i class="fas fa-microchip"></i></div>
                     <div class="project-title">Three-Phase Inverter System using IGBT and Arduino</div>
                     <p>Developed a comprehensive three-phase inverter system utilizing IGBT technology controlled by Arduino microcontroller. This project demonstrates power electronics principles and embedded system integration for AC motor control applications.</p>
+                    <div class="project-link">
+                        <a href="#" class="project-btn">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
                 </div>
 
-                <div class="project-card fade-in">
+                <div class="project-card fade-in tilt-effect">
+                    <div class="project-icon"><i class="fas fa-lightbulb"></i></div>
                     <div class="project-title">Smart Light Switch with Manual and Automatic Control</div>
                     <p>Designed and implemented an intelligent lighting control system featuring both manual operation and automatic control based on environmental conditions. Incorporates sensor integration and IoT capabilities for energy-efficient lighting solutions.</p>
+                    <div class="project-link">
+                        <a href="#" class="project-btn">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
                 </div>
 
-                <div class="project-card fade-in">
+                <div class="project-card fade-in tilt-effect">
+                    <div class="project-icon"><i class="fas fa-brain"></i></div>
                     <div class="project-title">2D Material Flakes Detection (Thesis)</div>
                     <p>Currently developing an advanced machine learning system for detection and classification of 2D material flakes using Ensemble Gaussian Mixture Models and Neural Networks. This research contributes to materials science and nanotechnology fields.</p>
+                    <div class="project-link">
+                        <a href="#" class="project-btn">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
                 </div>
             </div>
+
         </div>
     </section>
 
@@ -220,36 +239,50 @@
             <p>I'm always interested in discussing new opportunities and innovative projects.</p>
             
             <div class="contact-info">
-                <div class="contact-item fade-in" onclick="window.open('mailto:farhan.prottoy.17@gmail.com', '_blank')"
+                <div class="contact-item fade-in tilt-effect" onclick="window.open('mailto:farhan.prottoy.17@gmail.com', '_blank')"
                 style="cursor: pointer; color: #f3f1f9">
-                    <div class="contact-icon">📧</div>
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                        <div class="icon-background"></div>
+                    </div>
                     <h3>Email</h3>
                     <p>farhan.prottoy.17@gmail.com</p>
                 </div>
                 
-                <div class="contact-item fade-in">
-                    <div class="contact-icon">📱</div>
+                <div class="contact-item fade-in tilt-effect">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone-alt"></i>
+                        <div class="icon-background"></div>
+                    </div>
                     <h3>Phone</h3>
                     <p>01751948747</p>
                 </div>
                 
-                <div class="contact-item fade-in" onclick="window.open('https://www.linkedin.com/in/farhan-arefin-khan', '_blank')"
+                <div class="contact-item fade-in tilt-effect" onclick="window.open('https://www.linkedin.com/in/farhan-arefin-khan', '_blank')"
                 style="cursor: pointer; color: #f3f1f9">
-                    <div class="contact-icon">💼</div>
+                    <div class="contact-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                        <div class="icon-background"></div>
+                    </div>
                     <h3>LinkedIn</h3>
                     <p>Farhan Arefin Khan</p>
                 </div>
                 
-                <div class="contact-item fade-in" onclick="window.open('https://www.google.com/maps/place/%E0%A6%B8%E0%A6%BF%E0%A6%B2%E0%A7%87%E0%A6%9F/@24.8999862,91.8610356,13z/data=!3m1!4b1!4m6!3m5!1s0x375054d3d270329f:0xf58ef93431f67382!8m2!3d24.9047808!4d91.8600079!16zL20vMDJ0ZDJ4?entry=ttu&g_ep=EgoyMDI1MDcyMi4wIKXMDSoASAFQAw%3D%3D', '_blank')"
+                <div class="contact-item fade-in tilt-effect" onclick="window.open('https://www.google.com/maps/place/%E0%A6%B8%E0%A6%BF%E0%A6%B2%E0%A7%87%E0%A6%9F/@24.8999862,91.8610356,13z/data=!3m1!4b1!4m6!3m5!1s0x375054d3d270329f:0xf58ef93431f67382!8m2!3d24.9047808!4d91.8600079!16zL20vMDJ0ZDJ4?entry=ttu&g_ep=EgoyMDI1MDcyMi4wIKXMDSoASAFQAw%3D%3D', '_blank')"
                 style="cursor: pointer; color: #f3f1f9">
-                    <div class="contact-icon">📍</div>
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="icon-background"></div>
+                    </div>
                     <h3>Location</h3>
                     <p>Sylhet District, Bangladesh</p>
                 </div>
             </div>
+
         </div>
     </section>
 
     <script src="script.js"></script>
+    <script src="particles.js"></script>
 </body>
 </html>
