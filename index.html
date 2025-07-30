@@ -4,10 +4,184 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Farhan Arefin Khan - Electrical Engineer</title>
+    
+    <!-- SEO Meta Tags (2025 Enhancement) -->
+    <meta name="description" content="Farhan Arefin Khan - EEE Student & Tech Enthusiast. Specializing in ML, Embedded Systems, and Web Development. Available for innovative projects.">
+    <meta name="keywords" content="Electrical Engineer, Machine Learning, Arduino, Python, React, 2D Materials, Neural Networks, Embedded Systems">
+    <meta name="author" content="Farhan Arefin Khan">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Farhan Arefin Khan - Electrical Engineer">
+    <meta property="og:description" content="EEE Student & Tech Enthusiast specializing in ML, Embedded Systems, and Web Development">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://your-domain.com">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Farhan Arefin Khan - Electrical Engineer">
+    <meta name="twitter:description" content="EEE Student & Tech Enthusiast specializing in ML, Embedded Systems, and Web Development">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="animations.css">
     <link rel="stylesheet" href="modern.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Theme Support -->
+    <style>
+        :root {
+            --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --accent-color: #667eea;
+            --text-color: #333;
+            --bg-color: #ffffff;
+            --card-bg: #ffffff;
+            --border-color: #e1e5e9;
+        }
+        
+        [data-theme="dark"] {
+            --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --accent-color: #667eea;
+            --text-color: #e2e8f0;
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --border-color: #334155;
+        }
+        
+        [data-theme="dark"] body {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+            color: var(--text-color);
+        }
+        
+        [data-theme="dark"] nav {
+            background: rgba(15, 23, 42, 0.95);
+        }
+        
+        [data-theme="dark"] .section {
+            color: var(--text-color);
+        }
+        
+        [data-theme="dark"] .about,
+        [data-theme="dark"] .education,
+        [data-theme="dark"] .projects {
+            background: var(--card-bg);
+        }
+        
+        [data-theme="dark"] .project-card,
+        [data-theme="dark"] .education-item,
+        [data-theme="dark"] .contact-item {
+            background: var(--card-bg);
+            border-color: var(--border-color);
+        }
+        
+        [data-theme="dark"] .skills {
+            background: var(--card-bg);
+        }
+        
+        [data-theme="dark"] .skill-category {
+            background: rgba(30, 41, 59, 0.7);
+            border: 1px solid var(--border-color);
+        }
+        
+        [data-theme="dark"] .skill-category h3 {
+            color: var(--text-color);
+        }
+        
+        [data-theme="dark"] .skill-tag {
+            background: rgba(102, 126, 234, 0.1);
+            color: var(--text-color);
+            border: 1px solid rgba(102, 126, 234, 0.3);
+        }
+        
+        [data-theme="dark"] .skill-category:hover .skill-tag {
+            background: rgba(102, 126, 234, 0.2);
+            color: white;
+        }
+        
+        .theme-toggle {
+            background: none;
+            border: 2px solid var(--accent-color);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-left: 15px;
+            position: relative;
+            color: var(--text-color);
+        }
+        
+        .theme-toggle:hover {
+            background: var(--accent-color);
+            color: white;
+            transform: scale(1.1);
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        }
+        
+        .toggle-icon {
+            position: relative;
+            width: 20px;
+            height: 20px;
+        }
+        
+        .toggle-icon i {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: all 0.3s ease;
+            font-size: 16px;
+        }
+        
+        .sun-icon {
+            opacity: 0;
+            transform: translate(-50%, -50%) rotate(180deg);
+        }
+        
+        .moon-icon {
+            opacity: 1;
+            transform: translate(-50%, -50%) rotate(0deg);
+        }
+        
+        [data-theme="dark"] .sun-icon {
+            opacity: 1;
+            transform: translate(-50%, -50%) rotate(0deg);
+        }
+        
+        [data-theme="dark"] .moon-icon {
+            opacity: 0;
+            transform: translate(-50%, -50%) rotate(-180deg);
+        }
+        
+        /* Navigation responsive styles */
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .nav-right {
+            display: flex;
+            align-items: center;
+        }
+        
+        @media (max-width: 768px) {
+            .theme-toggle {
+                margin-left: 10px;
+                width: 35px;
+                height: 35px;
+            }
+            
+            .nav-menu {
+                display: none;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="preloader">
@@ -27,27 +201,68 @@
                     <span></span>
                     <span></span>
                 </button>
-                <ul class="nav-menu">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+                <div class="nav-right">
+                    <ul class="nav-menu">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <button class="theme-toggle" id="theme-toggle">
+                        <div class="toggle-icon">
+                            <i class="fas fa-sun sun-icon"></i>
+                            <i class="fas fa-moon moon-icon"></i>
+                        </div>
+                    </button>
+                </div>
             </div>
         </div>
     </nav>
 
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>Farhan Arefin Khan</h1>
-            <p class="subtitle">Electrical & Electronic Engineer</p>
+            <div class="hero-avatar">
+                <div class="avatar-container">
+                    <div class="avatar-image">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <div class="avatar-status"></div>
+                </div>
+            </div>
+            <h1 class="hero-title">
+                <span class="typing-text" data-text="Farhan Arefin Khan">Farhan Arefin Khan</span>
+            </h1>
+            <p class="subtitle">
+                <span class="role-switcher" data-roles="Electrical & Electronic Engineer,ML Enthusiast,IoT Developer,Problem Solver">Electrical & Electronic Engineer</span>
+            </p>
             <p class="description">Passionate about embedded systems, machine learning, and innovative engineering solutions</p>
-            <a href="#about" class="cta-button magnetic-btn">
-                <span class="magnetic-child">Explore My Work</span>
-                <span class="btn-icon magnetic-child"><i class="fas fa-arrow-right"></i></span>
-            </a>
+            
+            <!-- Tech Stack Preview -->
+            <div class="hero-tech-stack">
+                <div class="tech-item" data-tech="Python"><i class="fab fa-python"></i></div>
+                <div class="tech-item" data-tech="JavaScript"><i class="fab fa-js-square"></i></div>
+                <div class="tech-item" data-tech="React"><i class="fab fa-react"></i></div>
+                <div class="tech-item" data-tech="Arduino"><i class="fas fa-microchip"></i></div>
+                <div class="tech-item" data-tech="TensorFlow"><i class="fas fa-brain"></i></div>
+                <div class="tech-item" data-tech="Git"><i class="fab fa-git-alt"></i></div>
+            </div>
+            
+            <div class="hero-buttons">
+                <a href="#about" class="cta-button magnetic-btn primary">
+                    <span class="magnetic-child">Explore My Work</span>
+                    <span class="btn-icon magnetic-child"><i class="fas fa-arrow-right"></i></span>
+                </a>
+                <a href="Farhan Arefin Khan resume.pdf" download class="cta-button magnetic-btn secondary">
+                    <span class="magnetic-child">Download Resume</span>
+                    <span class="btn-icon magnetic-child"><i class="fas fa-download"></i></span>
+                </a>
+                <a href="#contact" class="cta-button magnetic-btn tertiary">
+                    <span class="magnetic-child">Get In Touch</span>
+                    <span class="btn-icon magnetic-child"><i class="fas fa-envelope"></i></span>
+                </a>
+            </div>
         </div>
     </section>
 
@@ -201,31 +416,127 @@
     <section id="projects" class="section projects">
         <div class="container">
             <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="embedded">Embedded Systems</button>
+                <button class="filter-btn" data-filter="ml">Machine Learning</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+            </div>
+            
             <div class="projects-grid">
-                <div class="project-card fade-in tilt-effect">
+                <div class="project-card fade-in tilt-effect" data-category="embedded">
+                    <div class="project-status">
+                        <span class="status-badge completed">Completed</span>
+                    </div>
                     <div class="project-icon"><i class="fas fa-microchip"></i></div>
                     <div class="project-title">Three-Phase Inverter System using IGBT and Arduino</div>
+                    <div class="project-tags">
+                        <span class="project-tag">Arduino</span>
+                        <span class="project-tag">IGBT</span>
+                        <span class="project-tag">Power Electronics</span>
+                        <span class="project-tag">AC Motor Control</span>
+                    </div>
                     <p>Developed a comprehensive three-phase inverter system utilizing IGBT technology controlled by Arduino microcontroller. This project demonstrates power electronics principles and embedded system integration for AC motor control applications.</p>
+                    <div class="project-stats">
+                        <div class="stat">
+                            <i class="fas fa-bolt"></i>
+                            <span>3-Phase Output</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-microchip"></i>
+                            <span>Arduino Controlled</span>
+                        </div>
+                    </div>
                     <div class="project-link">
-                        <a href="#" class="project-btn">Learn More <i class="fas fa-arrow-right"></i></a>
+                        <a href="#" class="project-btn primary">View Details <i class="fas fa-arrow-right"></i></a>
+                        <a href="#" class="project-btn secondary"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
 
-                <div class="project-card fade-in tilt-effect">
+                <div class="project-card fade-in tilt-effect" data-category="embedded">
+                    <div class="project-status">
+                        <span class="status-badge completed">Completed</span>
+                    </div>
                     <div class="project-icon"><i class="fas fa-lightbulb"></i></div>
                     <div class="project-title">Smart Light Switch with Manual and Automatic Control</div>
+                    <div class="project-tags">
+                        <span class="project-tag">IoT</span>
+                        <span class="project-tag">Sensors</span>
+                        <span class="project-tag">Automation</span>
+                        <span class="project-tag">Energy Efficiency</span>
+                    </div>
                     <p>Designed and implemented an intelligent lighting control system featuring both manual operation and automatic control based on environmental conditions. Incorporates sensor integration and IoT capabilities for energy-efficient lighting solutions.</p>
+                    <div class="project-stats">
+                        <div class="stat">
+                            <i class="fas fa-wifi"></i>
+                            <span>IoT Enabled</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-leaf"></i>
+                            <span>Energy Efficient</span>
+                        </div>
+                    </div>
                     <div class="project-link">
-                        <a href="#" class="project-btn">Learn More <i class="fas fa-arrow-right"></i></a>
+                        <a href="#" class="project-btn primary">View Details <i class="fas fa-arrow-right"></i></a>
+                        <a href="#" class="project-btn secondary"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
 
-                <div class="project-card fade-in tilt-effect">
+                <div class="project-card fade-in tilt-effect" data-category="ml">
+                    <div class="project-status">
+                        <span class="status-badge in-progress">In Progress</span>
+                    </div>
                     <div class="project-icon"><i class="fas fa-brain"></i></div>
                     <div class="project-title">2D Material Flakes Detection (Thesis)</div>
+                    <div class="project-tags">
+                        <span class="project-tag">Neural Networks</span>
+                        <span class="project-tag">Ensemble GMM</span>
+                        <span class="project-tag">Computer Vision</span>
+                        <span class="project-tag">Materials Science</span>
+                    </div>
                     <p>Currently developing an advanced machine learning system for detection and classification of 2D material flakes using Ensemble Gaussian Mixture Models and Neural Networks. This research contributes to materials science and nanotechnology fields.</p>
+                    <div class="project-stats">
+                        <div class="stat">
+                            <i class="fas fa-layer-group"></i>
+                            <span>2D Materials</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Thesis Project</span>
+                        </div>
+                    </div>
                     <div class="project-link">
-                        <a href="#" class="project-btn">Learn More <i class="fas fa-arrow-right"></i></a>
+                        <a href="#" class="project-btn primary">View Progress <i class="fas fa-arrow-right"></i></a>
+                        <a href="#" class="project-btn secondary"><i class="fas fa-file-pdf"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in tilt-effect" data-category="web">
+                    <div class="project-status">
+                        <span class="status-badge completed">Completed</span>
+                    </div>
+                    <div class="project-icon"><i class="fas fa-globe"></i></div>
+                    <div class="project-title">Interactive Portfolio Website</div>
+                    <div class="project-tags">
+                        <span class="project-tag">HTML5</span>
+                        <span class="project-tag">CSS3</span>
+                        <span class="project-tag">JavaScript</span>
+                        <span class="project-tag">Responsive Design</span>
+                    </div>
+                    <p>Modern, responsive portfolio website featuring interactive animations, dark/light theme toggle, AI chatbot, and advanced CSS effects. Built with vanilla JavaScript and modern web technologies.</p>
+                    <div class="project-stats">
+                        <div class="stat">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Responsive</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-rocket"></i>
+                            <span>Fast Loading</span>
+                        </div>
+                    </div>
+                    <div class="project-link">
+                        <a href="#" class="project-btn primary">Live Demo <i class="fas fa-external-link-alt"></i></a>
+                        <a href="#" class="project-btn secondary"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
             </div>
@@ -237,6 +548,13 @@
         <div class="container">
             <h2 class="section-title" style="color: white;">Get In Touch</h2>
             <p>I'm always interested in discussing new opportunities and innovative projects.</p>
+            
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <a href="Farhan Arefin Khan resume.pdf" download class="cta-button primary" style="opacity: 1; animation: none;">
+                    <span class="magnetic-child">Download My Resume</span>
+                    <span class="btn-icon magnetic-child"><i class="fas fa-download"></i></span>
+                </a>
+            </div>
             
             <div class="contact-info">
                 <div class="contact-item fade-in tilt-effect" onclick="window.open('mailto:farhan.prottoy.17@gmail.com', '_blank')"
@@ -284,5 +602,116 @@
 
     <script src="script.js"></script>
     <script src="particles.js"></script>
+    <script src="theme-toggle.js"></script>
+    <script src="tech-badges.js"></script>
+    <script src="chatbot.js"></script>
+    <script src="sticky-toc.js"></script>
+    
+    <!-- Enhanced Hero Animations -->
+    <script>
+        // Typing Animation for Hero Title
+        class TypingAnimation {
+            constructor(element) {
+                this.element = element;
+                this.text = element.dataset.text;
+                this.speed = 100;
+                this.init();
+            }
+            
+            init() {
+                this.element.textContent = '';
+                let index = 0;
+                
+                const type = () => {
+                    if (index < this.text.length) {
+                        this.element.textContent += this.text.charAt(index);
+                        index++;
+                        setTimeout(type, this.speed);
+                    }
+                };
+                
+                setTimeout(type, 1000);
+            }
+        }
+        
+        // Role Switcher Animation
+        class RoleSwitcher {
+            constructor(element) {
+                this.element = element;
+                this.roles = element.dataset.roles.split(',');
+                this.currentIndex = 0;
+                this.init();
+            }
+            
+            init() {
+                setInterval(() => {
+                    this.switchRole();
+                }, 3000);
+            }
+            
+            switchRole() {
+                this.element.style.opacity = '0';
+                setTimeout(() => {
+                    this.currentIndex = (this.currentIndex + 1) % this.roles.length;
+                    this.element.textContent = this.roles[this.currentIndex];
+                    this.element.style.opacity = '1';
+                }, 300);
+            }
+        }
+        
+        // Initialize animations when DOM loads
+        document.addEventListener('DOMContentLoaded', () => {
+            const typingElement = document.querySelector('.typing-text');
+            const roleSwitcher = document.querySelector('.role-switcher');
+            
+            if (typingElement) new TypingAnimation(typingElement);
+            if (roleSwitcher) new RoleSwitcher(roleSwitcher);
+            
+            // Tech stack hover effects
+            document.querySelectorAll('.tech-item').forEach(item => {
+                item.addEventListener('mouseenter', () => {
+                    item.style.transform = 'translateY(-5px) scale(1.1)';
+                    item.style.boxShadow = '0 10px 20px rgba(102, 126, 234, 0.3)';
+                });
+                
+                item.addEventListener('mouseleave', () => {
+                    item.style.transform = '';
+                    item.style.boxShadow = '';
+                });
+            });
+            
+            // Project filtering functionality
+            initProjectFiltering();
+        });
+        
+        // Project Filtering System
+        function initProjectFiltering() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const projectCards = document.querySelectorAll('.project-card');
+            
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Remove active class from all buttons
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    // Add active class to clicked button
+                    btn.classList.add('active');
+                    
+                    const filter = btn.dataset.filter;
+                    
+                    projectCards.forEach(card => {
+                        const category = card.dataset.category;
+                        
+                        if (filter === 'all' || category === filter) {
+                            card.classList.remove('hide');
+                            card.classList.add('show');
+                        } else {
+                            card.classList.add('hide');
+                            card.classList.remove('show');
+                        }
+                    });
+                });
+            });
+        }
+    </script>
 </body>
 </html>
